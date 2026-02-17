@@ -1,3 +1,19 @@
+// 1
+// export function formatePrice(price) {
+//     return price.toFixed(2)
+// }
+
+// 2
+// export function formatePrice(price) {
+//     if (!price) {
+//         return "0.00"
+//     }
+
+//     return price.toFixed(2)
+
+// }
+
+//3
 export function formatePrice(price) {
     if (!price) {
         return "0.00"
@@ -20,4 +36,11 @@ export function add(numbers) {
     }
 
     return sum
+}
+
+
+export function calculateSubtotal(items) {
+    return items.reduce((sum, item) => {
+        return sum + item.price * item.quantity;
+    }, 0);
 }
