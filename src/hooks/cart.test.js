@@ -13,7 +13,7 @@ afterAll(() => {
 
 beforeEach(() => {
     // runs before each test in this file
-    // clearCart()
+    clearCart()
     console.log('run before each test')
 
 })
